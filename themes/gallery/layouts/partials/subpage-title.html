@@ -1,0 +1,9 @@
+{{ if .Title }}
+  <hgroup>
+    <img src="/images/My_Signature.png" alt="My Signature" class="subpage-signature-img" />
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.Description }}
+     <p>{{ . | markdownify }}</p>
+    {{ end }}
+  </hgroup>
+{{ end }}

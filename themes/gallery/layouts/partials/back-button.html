@@ -1,0 +1,55 @@
+<button onclick="history.back()" class="back-button" aria-label="返回上一页">
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+  </svg>
+  返回上一页
+</button>
+
+<style>
+.back-button {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  padding: 0.6rem 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 0.75rem;
+  backdrop-filter: blur(8px);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+}
+
+.back-button .icon {
+  width: 1.2rem;
+  height: 1.2rem;
+  stroke: currentColor;
+}
+
+/* 响应式移动端适配 */
+@media (max-width: 768px) {
+  .back-button {
+    top: 1rem;
+    left: 1rem;
+    font-size: 0.9rem;
+    padding: 0.5rem 0.8rem;
+  }
+
+  .back-button .icon {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+</style>

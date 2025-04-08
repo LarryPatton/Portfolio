@@ -1,0 +1,1093 @@
+
+<html class="dark" lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>程序化章鱼触手(SD) - Larry&#39;s Portfolio</title>
+  <link rel="canonical" href="http://localhost:1313/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/" />
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+  <link rel="icon" type="image/png" href="/images/favicon.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+  <meta name="description" content="Substance Designer 赋予材质创作无限的可能。节点驱动的非破坏性流程，让每一个纹理都能动态调整，细节丰富，逻辑严谨。" />
+  
+  
+    <meta name="robots" content="index, follow" />
+  
+  <meta property="og:url" content="http://localhost:1313/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/" />
+  <meta property="og:site_name" content="Larry&#39;s Portfolio">
+  <meta property="og:title" content="程序化章鱼触手(SD)">
+  <meta property="og:description" content="Substance Designer 赋予材质创作无限的可能。节点驱动的非破坏性流程，让每一个纹理都能动态调整，细节丰富，逻辑严谨。">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="程序化&amp;特效">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  <meta property="og:image" content="http://localhost:1313/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/ignore_feature_hu_7fae7452b2c497fb.jpg" />
+  
+  <link rel="stylesheet" href="/css/main.min.3143202ef28e4cf8b5ebf850014a33d35b09d8389d28bd76f151f6fc7ccf24e5.css" />
+  
+  
+  <script src="/js/main.d7cbd5c8c680cd7fe31868f622c93a0f5a87ff019e96b93bfa6c83951691ae19.js" defer></script>
+</head>
+
+
+  
+  <body style="background-image: url('/images/backgrounds/3-2.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
+    <header>
+  
+    <a class="btn btn-square" href="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/" title="程序化建模&amp;材质">
+      <svg width="24" height="24" data-slot="icon" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path clip-rule="evenodd" fill-rule="evenodd" d="M11.03 3.97a.75.75 0 0 1 0 1.06l-6.22 6.22H21a.75.75 0 0 1 0 1.5H4.81l6.22 6.22a.75.75 0 1 1-1.06 1.06l-7.5-7.5a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 0 1 1.06 0Z"></path>
+      </svg>
+    </a>
+  
+  
+    <ul>
+      <li>
+        <button class="btn btn-square group" id="menu-toggle" aria-expanded="false" type="button" title="Menu">
+          <svg class="group-aria-expanded:hidden" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path clip-rule="evenodd" fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"></path>
+          </svg>
+          <svg class="hidden group-aria-expanded:block" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path clip-rule="evenodd" fill-rule="evenodd" d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z"></path>
+          </svg>
+        </button>
+      </li>
+    </ul>
+  
+</header>
+
+  <menu class="hidden" id="menu">
+    
+      <li itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+        <a aria-current="false" href="/about/" itemprop="url">
+          <span itemprop="name">About</span>
+        </a>
+      </li>
+    
+  </menu>
+
+
+
+    <main>
+        
+  <div class="scale-container-2">	
+   
+  <hgroup>
+    <img src="/images/My_Signature.png" alt="My Signature" class="subpage-signature-img" />
+    <h1>程序化章鱼触手(SD)</h1>
+    
+     <p>Substance Designer 赋予材质创作无限的可能。节点驱动的非破坏性流程，让每一个纹理都能动态调整，细节丰富，逻辑严谨。</p>
+    
+  </hgroup>
+
+
+   
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+
+
+  <section class="featured" style="margin-bottom: 1.5rem;margin-top: 1.5rem;">
+
+    
+      <div class="featured-slider-wrapper">
+        <div class="featured-slider-track" id="featuredSlider">
+          
+          
+
+          
+          <div class="slide"><img src="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/%E6%A0%B8%E5%BF%83%E5%86%85%E5%AE%B9_%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9%E7%89%88_feature_%E6%B8%B2%E6%9F%93%E6%95%88%E6%9E%9C.jpg" alt=""></div>
+
+          
+          
+            <div class="slide"><img src="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/%E6%A0%B8%E5%BF%83%E5%86%85%E5%AE%B9_SD%E7%89%88_%E4%BF%AF%E8%A7%86%E5%9B%BE%E7%BD%AE%E6%8D%A2&#43;%E6%9D%90%E8%B4%A8.jpg" alt=""></div>
+          
+            <div class="slide"><img src="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/%E6%A0%B8%E5%BF%83%E5%86%85%E5%AE%B9_SD%E7%89%88_%E6%B8%B2%E6%9F%93%E6%95%88%E6%9E%9C.jpg" alt=""></div>
+          
+            <div class="slide"><img src="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/%E6%A0%B8%E5%BF%83%E5%86%85%E5%AE%B9_%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9%E7%89%88_feature_%E6%B8%B2%E6%9F%93%E6%95%88%E6%9E%9C.jpg" alt=""></div>
+          
+
+          
+          <div class="slide"><img src="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/%E6%A0%B8%E5%BF%83%E5%86%85%E5%AE%B9_SD%E7%89%88_%E4%BF%AF%E8%A7%86%E5%9B%BE%E7%BD%AE%E6%8D%A2&#43;%E6%9D%90%E8%B4%A8.jpg" alt=""></div>
+        </div>
+
+        
+        <div class="slider-dots" id="sliderDots">
+          
+            <span class="dot" data-index="1"></span>
+          
+            <span class="dot" data-index="2"></span>
+          
+            <span class="dot" data-index="3"></span>
+          
+        </div>
+      </div>
+    
+  </section>
+
+
+   <section class="gallery">
+  
+  
+   
+    
+    
+    
+      
+      
+    
+    
+    
+    
+   
+  
+   
+    
+    
+    
+      
+      
+    
+    
+    
+    
+   
+  
+   
+    
+    
+    
+      
+      
+    
+    
+    
+    
+   
+  
+   
+    
+    
+    
+      
+      
+    
+    
+    
+    
+   
+  
+   
+    
+    
+    
+      
+      
+    
+    
+    
+    
+   
+  
+   
+    
+    
+    
+      
+      
+    
+    
+    
+    
+   
+  
+   
+    
+    
+    
+      
+      
+    
+    
+    
+    
+   
+  
+   
+    
+    
+    
+      
+      
+    
+    
+    
+    
+   
+  
+   
+    
+    
+    
+      
+      
+    
+    
+    
+    
+   
+  
+   
+    
+    
+    
+      
+      
+    
+    
+    
+    
+   
+  
+   
+  
+   
+    
+    
+    
+      
+      
+    
+    
+    
+    
+   
+  
+   
+    
+    
+    
+      
+      
+    
+    
+    
+    
+   
+  
+   
+    
+    
+    
+      
+      
+    
+    
+    
+    
+   
+  
+   
+    
+    
+    
+      
+      
+    
+    
+    
+    
+   
+  
+   
+    
+    
+    
+      
+      
+    
+    
+    
+    
+   
+  
+   
+    
+    
+    
+      
+      
+    
+    
+    
+    
+   
+  
+
+  
+  
+    
+    
+    
+    
+
+	<a class="gallery-item"
+   href="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/SD%E7%89%88_%E4%BE%A7%E8%A7%86%E5%9B%BE_%E7%BD%AE%E6%8D%A2&#43;%E5%9F%BA%E7%A1%80%E8%89%B2.jpg"
+   data-pswp-src="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/SD%E7%89%88_%E4%BE%A7%E8%A7%86%E5%9B%BE_%E7%BD%AE%E6%8D%A2&#43;%E5%9F%BA%E7%A1%80%E8%89%B2_hu_5c3304c7c663e25d.jpg"
+   data-pswp-width="1600"
+   data-pswp-height="717"
+   data-pswp-target="sd%E7%89%88_%E4%BE%A7%E8%A7%86%E5%9B%BE_%E7%BD%AE%E6%8D%A2&#43;%E5%9F%BA%E7%A1%80%E8%89%B2.jpg"
+   title=""
+   itemscope
+   itemtype="https://schema.org/ImageObject">
+   
+  <img class="lazyload"
+       width="600"
+       height="269"
+       data-src="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/SD%E7%89%88_%E4%BE%A7%E8%A7%86%E5%9B%BE_%E7%BD%AE%E6%8D%A2&#43;%E5%9F%BA%E7%A1%80%E8%89%B2_hu_9f173c6eba15e414.jpg"
+       alt="" />
+
+  <figcaption>SD版_侧视图_置换&#43;基础色.jpg</figcaption>
+
+  <meta itemprop="contentUrl" content="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/SD%E7%89%88_%E4%BE%A7%E8%A7%86%E5%9B%BE_%E7%BD%AE%E6%8D%A2&#43;%E5%9F%BA%E7%A1%80%E8%89%B2.jpg" />
+  
+  
+    <span itemprop="creator" itemtype="https://schema.org/Person" itemscope>
+      <meta itemprop="name" content="Larry Patton" />
+    </span>
+  
+</a>
+
+
+  
+    
+    
+    
+    
+
+	<a class="gallery-item"
+   href="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/SD%E7%89%88_%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84.png"
+   data-pswp-src="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/SD%E7%89%88_%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84_hu_8ed1682b1d83579d.png"
+   data-pswp-width="403"
+   data-pswp-height="747"
+   data-pswp-target="sd%E7%89%88_%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84.png"
+   title=""
+   itemscope
+   itemtype="https://schema.org/ImageObject">
+   
+  <img class="lazyload"
+       width="324"
+       height="600"
+       data-src="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/SD%E7%89%88_%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84_hu_7942b2d6d161cf9a.png"
+       alt="" />
+
+  <figcaption>SD版_文件结构.png</figcaption>
+
+  <meta itemprop="contentUrl" content="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/SD%E7%89%88_%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84.png" />
+  
+  
+    <span itemprop="creator" itemtype="https://schema.org/Person" itemscope>
+      <meta itemprop="name" content="Larry Patton" />
+    </span>
+  
+</a>
+
+
+  
+    
+    
+    
+    
+
+	<a class="gallery-item"
+   href="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/SD%E7%89%88_%E7%BD%AE%E6%8D%A2%E6%95%88%E6%9E%9C.jpg"
+   data-pswp-src="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/SD%E7%89%88_%E7%BD%AE%E6%8D%A2%E6%95%88%E6%9E%9C_hu_37265ddae78a74b2.jpg"
+   data-pswp-width="1600"
+   data-pswp-height="1043"
+   data-pswp-target="sd%E7%89%88_%E7%BD%AE%E6%8D%A2%E6%95%88%E6%9E%9C.jpg"
+   title=""
+   itemscope
+   itemtype="https://schema.org/ImageObject">
+   
+  <img class="lazyload"
+       width="600"
+       height="391"
+       data-src="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/SD%E7%89%88_%E7%BD%AE%E6%8D%A2%E6%95%88%E6%9E%9C_hu_c2a2d06a5e1f6f55.jpg"
+       alt="" />
+
+  <figcaption>SD版_置换效果.jpg</figcaption>
+
+  <meta itemprop="contentUrl" content="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/SD%E7%89%88_%E7%BD%AE%E6%8D%A2%E6%95%88%E6%9E%9C.jpg" />
+  
+  
+    <span itemprop="creator" itemtype="https://schema.org/Person" itemscope>
+      <meta itemprop="name" content="Larry Patton" />
+    </span>
+  
+</a>
+
+
+  
+    
+    
+    
+    
+
+	<a class="gallery-item"
+   href="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/SD%E7%89%88_%E8%8A%82%E7%82%B9_%E5%90%B8%E7%9B%98%E8%8A%82%E6%AE%B5.png"
+   data-pswp-src="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/SD%E7%89%88_%E8%8A%82%E7%82%B9_%E5%90%B8%E7%9B%98%E8%8A%82%E6%AE%B5_hu_e08a3f68e7373eb4.png"
+   data-pswp-width="1600"
+   data-pswp-height="809"
+   data-pswp-target="sd%E7%89%88_%E8%8A%82%E7%82%B9_%E5%90%B8%E7%9B%98%E8%8A%82%E6%AE%B5.png"
+   title=""
+   itemscope
+   itemtype="https://schema.org/ImageObject">
+   
+  <img class="lazyload"
+       width="600"
+       height="303"
+       data-src="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/SD%E7%89%88_%E8%8A%82%E7%82%B9_%E5%90%B8%E7%9B%98%E8%8A%82%E6%AE%B5_hu_dca573bd05bd6fd9.png"
+       alt="" />
+
+  <figcaption>SD版_节点_吸盘节段.png</figcaption>
+
+  <meta itemprop="contentUrl" content="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/SD%E7%89%88_%E8%8A%82%E7%82%B9_%E5%90%B8%E7%9B%98%E8%8A%82%E6%AE%B5.png" />
+  
+  
+    <span itemprop="creator" itemtype="https://schema.org/Person" itemscope>
+      <meta itemprop="name" content="Larry Patton" />
+    </span>
+  
+</a>
+
+
+  
+    
+    
+    
+    
+
+	<a class="gallery-item"
+   href="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/SD%E7%89%88_%E8%8A%82%E7%82%B9_%E5%9F%BA%E7%A1%80%E8%89%B2.jpg"
+   data-pswp-src="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/SD%E7%89%88_%E8%8A%82%E7%82%B9_%E5%9F%BA%E7%A1%80%E8%89%B2_hu_7f82915f8d7f3220.jpg"
+   data-pswp-width="1600"
+   data-pswp-height="809"
+   data-pswp-target="sd%E7%89%88_%E8%8A%82%E7%82%B9_%E5%9F%BA%E7%A1%80%E8%89%B2.jpg"
+   title=""
+   itemscope
+   itemtype="https://schema.org/ImageObject">
+   
+  <img class="lazyload"
+       width="600"
+       height="303"
+       data-src="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/SD%E7%89%88_%E8%8A%82%E7%82%B9_%E5%9F%BA%E7%A1%80%E8%89%B2_hu_2acbbbb754799ae5.jpg"
+       alt="" />
+
+  <figcaption>SD版_节点_基础色.jpg</figcaption>
+
+  <meta itemprop="contentUrl" content="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/SD%E7%89%88_%E8%8A%82%E7%82%B9_%E5%9F%BA%E7%A1%80%E8%89%B2.jpg" />
+  
+  
+    <span itemprop="creator" itemtype="https://schema.org/Person" itemscope>
+      <meta itemprop="name" content="Larry Patton" />
+    </span>
+  
+</a>
+
+
+  
+    
+    
+    
+    
+
+	<a class="gallery-item"
+   href="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/SD%E7%89%88_%E8%8A%82%E7%82%B9_%E8%A7%A6%E6%89%8B%E5%AD%90%E8%8A%82%E6%AE%B5.png"
+   data-pswp-src="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/SD%E7%89%88_%E8%8A%82%E7%82%B9_%E8%A7%A6%E6%89%8B%E5%AD%90%E8%8A%82%E6%AE%B5_hu_5e655974b5c701c6.png"
+   data-pswp-width="1600"
+   data-pswp-height="809"
+   data-pswp-target="sd%E7%89%88_%E8%8A%82%E7%82%B9_%E8%A7%A6%E6%89%8B%E5%AD%90%E8%8A%82%E6%AE%B5.png"
+   title=""
+   itemscope
+   itemtype="https://schema.org/ImageObject">
+   
+  <img class="lazyload"
+       width="600"
+       height="303"
+       data-src="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/SD%E7%89%88_%E8%8A%82%E7%82%B9_%E8%A7%A6%E6%89%8B%E5%AD%90%E8%8A%82%E6%AE%B5_hu_2e2828ed09fa5b3b.png"
+       alt="" />
+
+  <figcaption>SD版_节点_触手子节段.png</figcaption>
+
+  <meta itemprop="contentUrl" content="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/SD%E7%89%88_%E8%8A%82%E7%82%B9_%E8%A7%A6%E6%89%8B%E5%AD%90%E8%8A%82%E6%AE%B5.png" />
+  
+  
+    <span itemprop="creator" itemtype="https://schema.org/Person" itemscope>
+      <meta itemprop="name" content="Larry Patton" />
+    </span>
+  
+</a>
+
+
+  
+    
+    
+    
+    
+
+	<a class="gallery-item"
+   href="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/SD%E7%89%88_%E8%8A%82%E7%82%B9_%E8%A7%A6%E6%89%8B%E8%8A%82A.png"
+   data-pswp-src="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/SD%E7%89%88_%E8%8A%82%E7%82%B9_%E8%A7%A6%E6%89%8B%E8%8A%82A_hu_ac085a9b6c479c4.png"
+   data-pswp-width="1600"
+   data-pswp-height="809"
+   data-pswp-target="sd%E7%89%88_%E8%8A%82%E7%82%B9_%E8%A7%A6%E6%89%8B%E8%8A%82a.png"
+   title=""
+   itemscope
+   itemtype="https://schema.org/ImageObject">
+   
+  <img class="lazyload"
+       width="600"
+       height="303"
+       data-src="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/SD%E7%89%88_%E8%8A%82%E7%82%B9_%E8%A7%A6%E6%89%8B%E8%8A%82A_hu_b38a0e93b559753d.png"
+       alt="" />
+
+  <figcaption>SD版_节点_触手节A.png</figcaption>
+
+  <meta itemprop="contentUrl" content="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/SD%E7%89%88_%E8%8A%82%E7%82%B9_%E8%A7%A6%E6%89%8B%E8%8A%82A.png" />
+  
+  
+    <span itemprop="creator" itemtype="https://schema.org/Person" itemscope>
+      <meta itemprop="name" content="Larry Patton" />
+    </span>
+  
+</a>
+
+
+  
+    
+    
+    
+    
+
+	<a class="gallery-item"
+   href="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/SD%E7%89%88_%E8%8A%82%E7%82%B9_%E8%A7%A6%E6%89%8B%E8%8A%82B.png"
+   data-pswp-src="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/SD%E7%89%88_%E8%8A%82%E7%82%B9_%E8%A7%A6%E6%89%8B%E8%8A%82B_hu_2a275f1255b87bc2.png"
+   data-pswp-width="1600"
+   data-pswp-height="809"
+   data-pswp-target="sd%E7%89%88_%E8%8A%82%E7%82%B9_%E8%A7%A6%E6%89%8B%E8%8A%82b.png"
+   title=""
+   itemscope
+   itemtype="https://schema.org/ImageObject">
+   
+  <img class="lazyload"
+       width="600"
+       height="303"
+       data-src="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/SD%E7%89%88_%E8%8A%82%E7%82%B9_%E8%A7%A6%E6%89%8B%E8%8A%82B_hu_1b314b7b2651eb2a.png"
+       alt="" />
+
+  <figcaption>SD版_节点_触手节B.png</figcaption>
+
+  <meta itemprop="contentUrl" content="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/SD%E7%89%88_%E8%8A%82%E7%82%B9_%E8%A7%A6%E6%89%8B%E8%8A%82B.png" />
+  
+  
+    <span itemprop="creator" itemtype="https://schema.org/Person" itemscope>
+      <meta itemprop="name" content="Larry Patton" />
+    </span>
+  
+</a>
+
+
+  
+    
+    
+    
+    
+
+	<a class="gallery-item"
+   href="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/SD%E7%89%88_%E8%8A%82%E7%82%B9_%E8%A7%A6%E6%89%8B%E8%8A%82C.png"
+   data-pswp-src="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/SD%E7%89%88_%E8%8A%82%E7%82%B9_%E8%A7%A6%E6%89%8B%E8%8A%82C_hu_737f889125023a70.png"
+   data-pswp-width="1600"
+   data-pswp-height="809"
+   data-pswp-target="sd%E7%89%88_%E8%8A%82%E7%82%B9_%E8%A7%A6%E6%89%8B%E8%8A%82c.png"
+   title=""
+   itemscope
+   itemtype="https://schema.org/ImageObject">
+   
+  <img class="lazyload"
+       width="600"
+       height="303"
+       data-src="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/SD%E7%89%88_%E8%8A%82%E7%82%B9_%E8%A7%A6%E6%89%8B%E8%8A%82C_hu_f35c083df88d6717.png"
+       alt="" />
+
+  <figcaption>SD版_节点_触手节C.png</figcaption>
+
+  <meta itemprop="contentUrl" content="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/SD%E7%89%88_%E8%8A%82%E7%82%B9_%E8%A7%A6%E6%89%8B%E8%8A%82C.png" />
+  
+  
+    <span itemprop="creator" itemtype="https://schema.org/Person" itemscope>
+      <meta itemprop="name" content="Larry Patton" />
+    </span>
+  
+</a>
+
+
+  
+    
+    
+    
+    
+
+	<a class="gallery-item"
+   href="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/SD%E7%89%88_%E8%8A%82%E7%82%B9_%E8%A7%A6%E6%89%8B%E8%8A%82D.png"
+   data-pswp-src="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/SD%E7%89%88_%E8%8A%82%E7%82%B9_%E8%A7%A6%E6%89%8B%E8%8A%82D_hu_e416ef5b08355993.png"
+   data-pswp-width="1600"
+   data-pswp-height="809"
+   data-pswp-target="sd%E7%89%88_%E8%8A%82%E7%82%B9_%E8%A7%A6%E6%89%8B%E8%8A%82d.png"
+   title=""
+   itemscope
+   itemtype="https://schema.org/ImageObject">
+   
+  <img class="lazyload"
+       width="600"
+       height="303"
+       data-src="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/SD%E7%89%88_%E8%8A%82%E7%82%B9_%E8%A7%A6%E6%89%8B%E8%8A%82D_hu_44539f4a05f486c3.png"
+       alt="" />
+
+  <figcaption>SD版_节点_触手节D.png</figcaption>
+
+  <meta itemprop="contentUrl" content="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/SD%E7%89%88_%E8%8A%82%E7%82%B9_%E8%A7%A6%E6%89%8B%E8%8A%82D.png" />
+  
+  
+    <span itemprop="creator" itemtype="https://schema.org/Person" itemscope>
+      <meta itemprop="name" content="Larry Patton" />
+    </span>
+  
+</a>
+
+
+  
+    
+    
+    
+    
+
+	<a class="gallery-item"
+   href="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9%E7%89%88_%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9%E6%9E%84%E9%80%A0%E8%BF%87%E7%A8%8B.png"
+   data-pswp-src="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9%E7%89%88_%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9%E6%9E%84%E9%80%A0%E8%BF%87%E7%A8%8B_hu_5e5d3d0566559752.png"
+   data-pswp-width="1600"
+   data-pswp-height="396"
+   data-pswp-target="%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9%E7%89%88_%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9%E6%9E%84%E9%80%A0%E8%BF%87%E7%A8%8B.png"
+   title=""
+   itemscope
+   itemtype="https://schema.org/ImageObject">
+   
+  <img class="lazyload"
+       width="600"
+       height="148"
+       data-src="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9%E7%89%88_%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9%E6%9E%84%E9%80%A0%E8%BF%87%E7%A8%8B_hu_12a56087392ba5cc.png"
+       alt="" />
+
+  <figcaption>几何节点版_几何节点构造过程.png</figcaption>
+
+  <meta itemprop="contentUrl" content="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9%E7%89%88_%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9%E6%9E%84%E9%80%A0%E8%BF%87%E7%A8%8B.png" />
+  
+  
+    <span itemprop="creator" itemtype="https://schema.org/Person" itemscope>
+      <meta itemprop="name" content="Larry Patton" />
+    </span>
+  
+</a>
+
+
+  
+    
+    
+    
+    
+
+	<a class="gallery-item"
+   href="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9%E7%89%88_%E5%8D%95%E5%8F%AA%E8%A7%A6%E6%89%8Bshader.png"
+   data-pswp-src="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9%E7%89%88_%E5%8D%95%E5%8F%AA%E8%A7%A6%E6%89%8Bshader_hu_6dc5905815459e59.png"
+   data-pswp-width="1600"
+   data-pswp-height="1103"
+   data-pswp-target="%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9%E7%89%88_%E5%8D%95%E5%8F%AA%E8%A7%A6%E6%89%8Bshader.png"
+   title=""
+   itemscope
+   itemtype="https://schema.org/ImageObject">
+   
+  <img class="lazyload"
+       width="600"
+       height="414"
+       data-src="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9%E7%89%88_%E5%8D%95%E5%8F%AA%E8%A7%A6%E6%89%8Bshader_hu_2cda33698f85496b.png"
+       alt="" />
+
+  <figcaption>几何节点版_单只触手shader.png</figcaption>
+
+  <meta itemprop="contentUrl" content="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9%E7%89%88_%E5%8D%95%E5%8F%AA%E8%A7%A6%E6%89%8Bshader.png" />
+  
+  
+    <span itemprop="creator" itemtype="https://schema.org/Person" itemscope>
+      <meta itemprop="name" content="Larry Patton" />
+    </span>
+  
+</a>
+
+
+  
+    
+    
+    
+    
+
+	<a class="gallery-item"
+   href="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9%E7%89%88_%E5%8D%95%E5%8F%AA%E8%A7%A6%E6%89%8B%E6%B8%B2%E6%9F%93.jpg"
+   data-pswp-src="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9%E7%89%88_%E5%8D%95%E5%8F%AA%E8%A7%A6%E6%89%8B%E6%B8%B2%E6%9F%93_hu_dfcd1ea93af8c565.jpg"
+   data-pswp-width="1600"
+   data-pswp-height="765"
+   data-pswp-target="%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9%E7%89%88_%E5%8D%95%E5%8F%AA%E8%A7%A6%E6%89%8B%E6%B8%B2%E6%9F%93.jpg"
+   title=""
+   itemscope
+   itemtype="https://schema.org/ImageObject">
+   
+  <img class="lazyload"
+       width="600"
+       height="287"
+       data-src="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9%E7%89%88_%E5%8D%95%E5%8F%AA%E8%A7%A6%E6%89%8B%E6%B8%B2%E6%9F%93_hu_66d0591399da99de.jpg"
+       alt="" />
+
+  <figcaption>几何节点版_单只触手渲染.jpg</figcaption>
+
+  <meta itemprop="contentUrl" content="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9%E7%89%88_%E5%8D%95%E5%8F%AA%E8%A7%A6%E6%89%8B%E6%B8%B2%E6%9F%93.jpg" />
+  
+  
+    <span itemprop="creator" itemtype="https://schema.org/Person" itemscope>
+      <meta itemprop="name" content="Larry Patton" />
+    </span>
+  
+</a>
+
+
+  
+    
+    
+    
+    
+
+	<a class="gallery-item"
+   href="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/%E6%A0%B8%E5%BF%83%E5%86%85%E5%AE%B9_SD%E7%89%88_%E4%BF%AF%E8%A7%86%E5%9B%BE%E7%BD%AE%E6%8D%A2&#43;%E6%9D%90%E8%B4%A8.jpg"
+   data-pswp-src="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/%E6%A0%B8%E5%BF%83%E5%86%85%E5%AE%B9_SD%E7%89%88_%E4%BF%AF%E8%A7%86%E5%9B%BE%E7%BD%AE%E6%8D%A2&#43;%E6%9D%90%E8%B4%A8_hu_7fae7452b2c497fb.jpg"
+   data-pswp-width="1600"
+   data-pswp-height="1597"
+   data-pswp-target="%E6%A0%B8%E5%BF%83%E5%86%85%E5%AE%B9_sd%E7%89%88_%E4%BF%AF%E8%A7%86%E5%9B%BE%E7%BD%AE%E6%8D%A2&#43;%E6%9D%90%E8%B4%A8.jpg"
+   title=""
+   itemscope
+   itemtype="https://schema.org/ImageObject">
+   
+  <img class="lazyload"
+       width="600"
+       height="599"
+       data-src="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/%E6%A0%B8%E5%BF%83%E5%86%85%E5%AE%B9_SD%E7%89%88_%E4%BF%AF%E8%A7%86%E5%9B%BE%E7%BD%AE%E6%8D%A2&#43;%E6%9D%90%E8%B4%A8_hu_ab71f9006317998e.jpg"
+       alt="" />
+
+  <figcaption>核心内容_SD版_俯视图置换&#43;材质.jpg</figcaption>
+
+  <meta itemprop="contentUrl" content="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/%E6%A0%B8%E5%BF%83%E5%86%85%E5%AE%B9_SD%E7%89%88_%E4%BF%AF%E8%A7%86%E5%9B%BE%E7%BD%AE%E6%8D%A2&#43;%E6%9D%90%E8%B4%A8.jpg" />
+  
+  
+    <span itemprop="creator" itemtype="https://schema.org/Person" itemscope>
+      <meta itemprop="name" content="Larry Patton" />
+    </span>
+  
+</a>
+
+
+  
+    
+    
+    
+    
+
+	<a class="gallery-item"
+   href="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/%E6%A0%B8%E5%BF%83%E5%86%85%E5%AE%B9_SD%E7%89%88_%E6%B8%B2%E6%9F%93%E6%95%88%E6%9E%9C.jpg"
+   data-pswp-src="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/%E6%A0%B8%E5%BF%83%E5%86%85%E5%AE%B9_SD%E7%89%88_%E6%B8%B2%E6%9F%93%E6%95%88%E6%9E%9C_hu_b39d7e66d53560f7.jpg"
+   data-pswp-width="1600"
+   data-pswp-height="757"
+   data-pswp-target="%E6%A0%B8%E5%BF%83%E5%86%85%E5%AE%B9_sd%E7%89%88_%E6%B8%B2%E6%9F%93%E6%95%88%E6%9E%9C.jpg"
+   title=""
+   itemscope
+   itemtype="https://schema.org/ImageObject">
+   
+  <img class="lazyload"
+       width="600"
+       height="284"
+       data-src="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/%E6%A0%B8%E5%BF%83%E5%86%85%E5%AE%B9_SD%E7%89%88_%E6%B8%B2%E6%9F%93%E6%95%88%E6%9E%9C_hu_a07cc284c42b13e9.jpg"
+       alt="" />
+
+  <figcaption>核心内容_SD版_渲染效果.jpg</figcaption>
+
+  <meta itemprop="contentUrl" content="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/%E6%A0%B8%E5%BF%83%E5%86%85%E5%AE%B9_SD%E7%89%88_%E6%B8%B2%E6%9F%93%E6%95%88%E6%9E%9C.jpg" />
+  
+  
+    <span itemprop="creator" itemtype="https://schema.org/Person" itemscope>
+      <meta itemprop="name" content="Larry Patton" />
+    </span>
+  
+</a>
+
+
+  
+    
+    
+    
+    
+
+	<a class="gallery-item"
+   href="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/%E6%A0%B8%E5%BF%83%E5%86%85%E5%AE%B9_%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9%E7%89%88_feature_%E6%B8%B2%E6%9F%93%E6%95%88%E6%9E%9C.jpg"
+   data-pswp-src="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/%E6%A0%B8%E5%BF%83%E5%86%85%E5%AE%B9_%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9%E7%89%88_feature_%E6%B8%B2%E6%9F%93%E6%95%88%E6%9E%9C_hu_6b18dfbc60b7d8a9.jpg"
+   data-pswp-width="1600"
+   data-pswp-height="720"
+   data-pswp-target="%E6%A0%B8%E5%BF%83%E5%86%85%E5%AE%B9_%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9%E7%89%88_feature_%E6%B8%B2%E6%9F%93%E6%95%88%E6%9E%9C.jpg"
+   title=""
+   itemscope
+   itemtype="https://schema.org/ImageObject">
+   
+  <img class="lazyload"
+       width="600"
+       height="270"
+       data-src="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/%E6%A0%B8%E5%BF%83%E5%86%85%E5%AE%B9_%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9%E7%89%88_feature_%E6%B8%B2%E6%9F%93%E6%95%88%E6%9E%9C_hu_5da66ae332183842.jpg"
+       alt="" />
+
+  <figcaption>核心内容_几何节点版_feature_渲染效果.jpg</figcaption>
+
+  <meta itemprop="contentUrl" content="/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/%E6%A0%B8%E5%BF%83%E5%86%85%E5%AE%B9_%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9%E7%89%88_feature_%E6%B8%B2%E6%9F%93%E6%95%88%E6%9E%9C.jpg" />
+  
+  
+    <span itemprop="creator" itemtype="https://schema.org/Person" itemscope>
+      <meta itemprop="name" content="Larry Patton" />
+    </span>
+  
+</a>
+
+
+  
+</section>
+
+   <button onclick="history.back()" class="back-button" aria-label="返回上一页">
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+  </svg>
+  返回上一页
+</button>
+
+<style>
+.back-button {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  padding: 0.6rem 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 0.75rem;
+  backdrop-filter: blur(8px);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+}
+
+.back-button .icon {
+  width: 1.2rem;
+  height: 1.2rem;
+  stroke: currentColor;
+}
+
+ 
+@media (max-width: 768px) {
+  .back-button {
+    top: 1rem;
+    left: 1rem;
+    font-size: 0.9rem;
+    padding: 0.5rem 0.8rem;
+  }
+
+  .back-button .icon {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+</style>
+
+   <a href="/" class="home-button" aria-label="返回首页">
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M3 9.75L12 3l9 6.75M4.5 10.5V20h15v-9.5M9 21V12h6v9" />
+  </svg>
+  返回首页
+</a>
+
+<style>
+.home-button {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  z-index: 999;
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  padding: 0.6rem 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 0.75rem;
+  backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
+}
+
+.home-button:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+}
+
+.home-button .icon {
+  width: 1.2rem;
+  height: 1.2rem;
+  stroke: currentColor;
+}
+
+ 
+@media (max-width: 768px) {
+  .home-button {
+    top: 1rem;
+    right: 1rem;
+    font-size: 0.9rem;
+    padding: 0.5rem 0.8rem;
+  }
+
+  .home-button .icon {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+</style>
+
+   <footer>
+  <section>
+    © Larry Patton
+
+  </section>
+  <script type="module">
+  import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe@5/dist/photoswipe-lightbox.esm.min.js';
+
+  const lightbox = new PhotoSwipeLightbox({
+    gallery: '.gallery',
+    children: 'a.gallery-item',
+    pswpModule: () => import('https://unpkg.com/photoswipe@5/dist/photoswipe.esm.min.js')
+  });
+  lightbox.init();
+</script>
+
+
+</footer>
+
+ </div>  
+
+    </main>
+    
+    <script src="/js/custom.js"></script>
+    
+	<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+	</div>
+
+  </body>
+</html>

@@ -1,0 +1,45 @@
+{{ $allImages := .Resources.ByType "image" }}
+{{ $images := slice }}
+
+{{ range $img := $allImages }}
+  {{ if in $img.Name "核心内容" }}
+    {{ $images = $images | append $img }}
+  {{ end }}
+{{ end }}
+
+{{ if gt (len $images) 0 }}
+  <section class="featured" style="margin-bottom: 1.5rem;margin-top: 1.5rem;">
+
+    {{ if gt (len $images) 1 }}
+      <div class="featured-slider-wrapper">
+        <div class="featured-slider-track" id="featuredSlider">
+          {{ $last := index $images (sub (len $images) 1) }}
+          {{ $first := index $images 0 }}
+
+          <!-- 插入最后一张到开头，形成循环头部 -->
+          <div class="slide"><img src="{{ $last.RelPermalink }}" alt=""></div>
+
+          <!-- 正常图片 -->
+          {{ range $i, $img := $images }}
+            <div class="slide"><img src="{{ $img.RelPermalink }}" alt=""></div>
+          {{ end }}
+
+          <!-- 插入第一张到结尾，形成循环尾部 -->
+          <div class="slide"><img src="{{ $first.RelPermalink }}" alt=""></div>
+        </div>
+
+        <!-- 分页指示器 -->
+        <div class="slider-dots" id="sliderDots">
+          {{ range $i, $img := $images }}
+            <span class="dot" data-index="{{ add $i 1 }}"></span>
+          {{ end }}
+        </div>
+      </div>
+    {{ else }}
+      <!-- 仅一张图，直接显示 -->
+      <div class="featured-single-image">
+        <img src="{{ (index $images 0).RelPermalink }}" alt="精选图">
+      </div>
+    {{ end }}
+  </section>
+{{ end }}

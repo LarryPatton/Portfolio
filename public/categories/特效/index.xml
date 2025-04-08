@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>特效 on Larry&#39;s Portfolio</title>
+    <link>http://localhost:1313/categories/%E7%89%B9%E6%95%88/</link>
+    <description>Recent content in 特效 on Larry&#39;s Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>1451076908@qq.com (Larry Patton)</managingEditor>
+    <webMaster>1451076908@qq.com (Larry Patton)</webMaster>
+    <copyright>© Larry Patton</copyright><atom:link href="http://localhost:1313/categories/%E7%89%B9%E6%95%88/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Niagara特效</title>
+      <link>http://localhost:1313/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/niagara%E7%89%B9%E6%95%88/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>1451076908@qq.com (Larry Patton)</author>
+      <guid>http://localhost:1313/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/niagara%E7%89%B9%E6%95%88/</guid><media:content url="http://localhost:1313/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/niagara%E7%89%B9%E6%95%88/ignore_feature_hu_e2a661d96ac0e7b1.png" type="image/jpeg"/>
+        <description>
+          &lt;img src=&quot;http://localhost:1313/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/niagara%E7%89%B9%E6%95%88/ignore_feature_hu_e2a661d96ac0e7b1.png&quot; /&gt;
+          &lt;p&gt;形态、结构、材质、光影交错，建模不仅仅是技术的堆砌，更是创造世界的艺术。从雕刻到拼装，每一次建模都是对现实与幻想的塑造。&lt;/p&gt;
+        </description></item>
+    <item>
+      <title>程序化&amp;特效</title>
+      <link>http://localhost:1313/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>1451076908@qq.com (Larry Patton)</author>
+      <guid>http://localhost:1313/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/</guid><media:content url="http://localhost:1313/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/feature_hu_9b2aaf764276abf3.jpg" type="image/jpeg"/>
+        <description>
+          &lt;img src=&quot;http://localhost:1313/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/feature_hu_9b2aaf764276abf3.jpg&quot; /&gt;
+          &lt;p&gt;“形态、光影、材质在节点间重构，程序化不只是效率的工具，更是通往视觉奇境的语言。每一次生成，都是一次新的世界诞生。”&lt;/p&gt;
+        </description></item>
+  </channel>
+</rss>

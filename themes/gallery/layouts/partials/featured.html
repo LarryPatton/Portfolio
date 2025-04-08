@@ -1,0 +1,34 @@
+{{ $page := site.GetPage "featured-album" }}
+{{ if $page }}
+  {{ $images := $page.Resources.ByType "image" }}
+  {{ if gt (len $images) 0 }}
+    <section class="featured" style="margin-bottom: 1rem;">
+      <h2 class="featured-title">精选作品</h2>
+
+      <div class="featured-slider-wrapper">
+        <div class="featured-slider-track" id="featuredSlider">
+          {{ $last := index $images (sub (len $images) 1) }}
+          {{ $first := index $images 0 }}
+
+          <!-- 插入最后一张到开头，形成循环头部 -->
+          <div class="slide"><img src="{{ $last.RelPermalink }}" alt=""></div>
+
+          <!-- 正常图片 -->
+          {{ range $i, $img := $images }}
+          <div class="slide"><img src="{{ $img.RelPermalink }}" alt=""></div>
+          {{ end }}
+
+          <!-- 插入第一张到结尾，形成循环尾部 -->
+          <div class="slide"><img src="{{ $first.RelPermalink }}" alt=""></div>
+        </div>
+
+        <!-- 分页指示器 -->
+        <div class="slider-dots" id="sliderDots">
+          {{ range $i, $img := $images }}
+            <span class="dot" data-index="{{ add $i 1 }}"></span>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+  {{ end }}
+{{ end }}

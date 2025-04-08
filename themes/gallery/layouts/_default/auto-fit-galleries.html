@@ -1,0 +1,11 @@
+{{ define "main" }}
+  {{ partial "subpage-title.html" . }}
+   <section class="auto-fit-galleries">
+    {{ range where .Pages "Params.private" "ne" true }}
+      {{ partial "album-card-long.html" . }}
+    {{ end }}
+  </section>
+  {{ partial "back-button.html" . }}
+  {{ partial "footer.html" . }}
+
+{{ end }}

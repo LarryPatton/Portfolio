@@ -1,0 +1,42 @@
+baseURL = "https://example.com/"
+languageCode = "en-us"
+title = "Larry's Portfolio"
+theme = "gallery"
+copyright = "© Larry Patton"
+defaultContentLanguage = "en"
+disableKinds = ["taxonomy"]
+enableRobotsTXT = true
+timeout = "120s"
+
+[params]
+  defaultTheme = "dark"
+  [params.author]
+    email = "1451076908@qq.com"
+    name = "Larry Patton"
+  [params.socialIcons]
+    #facebook = "https://www.facebook.com/"
+    #instagram = "https://www.instagram.com/"
+    #github = "https://github.com/nicokaiser/hugo-theme-gallery/"
+    #youtube = "https://www.youtube.com/"
+    email = "1451076908@qq.com"
+    #website = "https://example.com"
+    #mastodon = "https://example.com"
+    #pixelfed = "https://example.com"
+    #mixcloud = "https://mixcloud.com"
+  [params.gallery]
+    #boxSpacing = 10
+    #targetRowHeight = 288
+    #targetRowHeightTolerance = 0.25
+    
+[outputs]
+  home = ["HTML", "RSS"]
+  page = ["HTML"]
+  section = ["HTML"]
+
+[imaging]
+  quality = 75
+  resampleFilter = "CatmullRom"
+  [imaging.exif]
+    disableDate = false
+    disableLatLong = true
+    includeFields = "ImageDescription|Orientation"
