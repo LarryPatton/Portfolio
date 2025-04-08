@@ -1,4 +1,5 @@
 baseURL = "https://larrypatton.github.io/Portfolio/"
+
 languageCode = "en-us"
 title = "Larry's Portfolio"
 theme = "gallery"
