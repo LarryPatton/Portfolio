@@ -8,6 +8,11 @@ disableKinds = ["taxonomy"]
 enableRobotsTXT = true
 timeout = "120s"
 
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
+
 [params]
   defaultTheme = "dark"
   [params.author]
