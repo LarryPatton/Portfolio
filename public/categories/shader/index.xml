@@ -2,47 +2,47 @@
 <rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shader on Larry&#39;s Portfolio</title>
-    <link>http://localhost:1313/categories/shader/</link>
+    <link>http://localhost:1313/Portfolio/categories/shader/</link>
     <description>Recent content in Shader on Larry&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>1451076908@qq.com (Larry Patton)</managingEditor>
     <webMaster>1451076908@qq.com (Larry Patton)</webMaster>
-    <copyright>© Larry Patton</copyright><atom:link href="http://localhost:1313/categories/shader/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© Larry Patton</copyright><atom:link href="http://localhost:1313/Portfolio/categories/shader/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>程序化建模&amp;材质</title>
-      <link>http://localhost:1313/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/</link>
+      <link>http://localhost:1313/Portfolio/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>1451076908@qq.com (Larry Patton)</author>
-      <guid>http://localhost:1313/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/</guid><media:content url="http://localhost:1313/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/feature_hu_9b2aaf764276abf3.jpg" type="image/jpeg"/>
+      <guid>http://localhost:1313/Portfolio/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/</guid><media:content url="http://localhost:1313/Portfolio/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/feature_hu_9b2aaf764276abf3.jpg" type="image/jpeg"/>
         <description>
-          &lt;img src=&quot;http://localhost:1313/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/feature_hu_9b2aaf764276abf3.jpg&quot; /&gt;
+          &lt;img src=&quot;http://localhost:1313/Portfolio/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/feature_hu_9b2aaf764276abf3.jpg&quot; /&gt;
           &lt;p&gt;从数学到视觉，从代码到艺术，程序化创作是一种全新的表达方式。通过规则、算法和节点系统，我们可以生成无限可能的世界，创造超越传统设计的视觉体验。&lt;/p&gt;
         </description></item>
     <item>
       <title>几何节点特效</title>
-      <link>http://localhost:1313/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9%E7%89%B9%E6%95%88/</link>
+      <link>http://localhost:1313/Portfolio/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9%E7%89%B9%E6%95%88/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>1451076908@qq.com (Larry Patton)</author>
-      <guid>http://localhost:1313/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9%E7%89%B9%E6%95%88/</guid><media:content url="http://localhost:1313/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9%E7%89%B9%E6%95%88/ignore_feature_hu_e6fbb41417f55642.jpg" type="image/jpeg"/>
+      <guid>http://localhost:1313/Portfolio/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9%E7%89%B9%E6%95%88/</guid><media:content url="http://localhost:1313/Portfolio/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9%E7%89%B9%E6%95%88/ignore_feature_hu_e6fbb41417f55642.jpg" type="image/jpeg"/>
         <description>
-          &lt;img src=&quot;http://localhost:1313/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9%E7%89%B9%E6%95%88/ignore_feature_hu_e6fbb41417f55642.jpg&quot; /&gt;
+          &lt;img src=&quot;http://localhost:1313/Portfolio/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9%E7%89%B9%E6%95%88/ignore_feature_hu_e6fbb41417f55642.jpg&quot; /&gt;
           &lt;p&gt;几何节点为带来了革命性的变革--通过节点编辑器，我们可以构建复杂的形态、创建动态生成的结构与特效。&lt;/p&gt;
         </description></item>
     <item>
       <title>程序化单体部件(几何节点)</title>
-      <link>http://localhost:1313/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%8D%95%E4%BD%93%E9%83%A8%E4%BB%B6%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/</link>
+      <link>http://localhost:1313/Portfolio/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%8D%95%E4%BD%93%E9%83%A8%E4%BB%B6%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>1451076908@qq.com (Larry Patton)</author>
-      <guid>http://localhost:1313/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%8D%95%E4%BD%93%E9%83%A8%E4%BB%B6%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/</guid><media:content url="http://localhost:1313/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%8D%95%E4%BD%93%E9%83%A8%E4%BB%B6%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/ignore_feature_hu_291fa12a895b79fd.jpg" type="image/jpeg"/>
+      <guid>http://localhost:1313/Portfolio/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%8D%95%E4%BD%93%E9%83%A8%E4%BB%B6%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/</guid><media:content url="http://localhost:1313/Portfolio/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%8D%95%E4%BD%93%E9%83%A8%E4%BB%B6%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/ignore_feature_hu_291fa12a895b79fd.jpg" type="image/jpeg"/>
         <description>
-          &lt;img src=&quot;http://localhost:1313/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%8D%95%E4%BD%93%E9%83%A8%E4%BB%B6%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/ignore_feature_hu_291fa12a895b79fd.jpg&quot; /&gt;
+          &lt;img src=&quot;http://localhost:1313/Portfolio/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%8D%95%E4%BD%93%E9%83%A8%E4%BB%B6%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/ignore_feature_hu_291fa12a895b79fd.jpg&quot; /&gt;
           &lt;p&gt;几何节点为 3D 建模带来了革命性的变革。通过节点编辑器，我们可以构建复杂的形态、创建动态生成的结构，并实现传统建模难以企及的效果。&lt;/p&gt;
         </description></item>
     <item>
       <title>程序化章鱼触手(SD)</title>
-      <link>http://localhost:1313/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/</link>
+      <link>http://localhost:1313/Portfolio/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>1451076908@qq.com (Larry Patton)</author>
-      <guid>http://localhost:1313/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/</guid><media:content url="http://localhost:1313/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/ignore_feature_hu_29942ac090fb7499.jpg" type="image/jpeg"/>
+      <guid>http://localhost:1313/Portfolio/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/</guid><media:content url="http://localhost:1313/Portfolio/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/ignore_feature_hu_29942ac090fb7499.jpg" type="image/jpeg"/>
         <description>
-          &lt;img src=&quot;http://localhost:1313/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/ignore_feature_hu_29942ac090fb7499.jpg&quot; /&gt;
+          &lt;img src=&quot;http://localhost:1313/Portfolio/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%89%B9%E6%95%88/%E7%A8%8B%E5%BA%8F%E5%8C%96%E5%BB%BA%E6%A8%A1%E6%9D%90%E8%B4%A8/%E7%A8%8B%E5%BA%8F%E5%8C%96%E7%AB%A0%E9%B1%BC%E8%A7%A6%E6%89%8Bsd&#43;%E5%87%A0%E4%BD%95%E8%8A%82%E7%82%B9/ignore_feature_hu_29942ac090fb7499.jpg&quot; /&gt;
           &lt;p&gt;Substance Designer 赋予材质创作无限的可能。节点驱动的非破坏性流程，让每一个纹理都能动态调整，细节丰富，逻辑严谨。&lt;/p&gt;
         </description></item>
   </channel>

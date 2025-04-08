@@ -3,7 +3,7 @@
   {{ partial "head.html" . }}
 
   {{ $bg := .Params.background | default "images/default-bg.png" }}
-  <body style="background-image: url('/{{ $bg }}'); background-size: cover; background-position: center; background-attachment: fixed;">
+  <body style="background-image: url('{{ $bg | relURL }}'); background-size: cover; background-position: center; background-attachment: fixed;">
     {{ block "header" . }}{{ partial "header.html" . }}{{ end }}
     <main>
       {{ block "main" . }}{{ end }}
