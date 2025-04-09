@@ -28,6 +28,11 @@
           <div class="slide"><img src="{{ $first.RelPermalink }}" alt=""></div>
         </div>
 
+<!-- 左右切换按钮 -->
+		  <button class="slider-btn prev" id="sliderPrevBtn">&#10094;</button>
+		  <button class="slider-btn next" id="sliderNextBtn">&#10095;</button>
+
+
         <!-- 分页指示器 -->
         <div class="slider-dots" id="sliderDots">
           {{ range $i, $img := $images }}

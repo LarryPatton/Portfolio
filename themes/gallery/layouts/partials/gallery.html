@@ -49,7 +49,8 @@
        data-src="{{ $thumbnail.RelPermalink }}"
        alt="{{ .Title }}" />
 
-  <figcaption>{{ $image.Name }}</figcaption>
+  <figcaption>{{ replaceRE `\.[^.]+$` "" (replaceRE `^核心内容_` "" $image.Name) }}</figcaption>
+
 
   <meta itemprop="contentUrl" content="{{ if $publishResources }}{{ $image.RelPermalink }}{{ else }}{{ $full.RelPermalink }}{{ end }}" />
   

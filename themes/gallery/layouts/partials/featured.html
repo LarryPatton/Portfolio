@@ -7,6 +7,7 @@
 
       <div class="featured-slider-wrapper">
         <div class="featured-slider-track" id="featuredSlider">
+        
           {{ $last := index $images (sub (len $images) 1) }}
           {{ $first := index $images 0 }}
 
@@ -21,6 +22,11 @@
           <!-- 插入第一张到结尾，形成循环尾部 -->
           <div class="slide"><img src="{{ $first.RelPermalink }}" alt=""></div>
         </div>
+
+		<!-- 左右切换按钮 -->
+		  <button class="slider-btn prev" id="sliderPrevBtn">&#10094;</button>
+		  <button class="slider-btn next" id="sliderNextBtn">&#10095;</button>
+
 
         <!-- 分页指示器 -->
         <div class="slider-dots" id="sliderDots">

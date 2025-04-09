@@ -2,7 +2,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const slider = document.getElementById("featuredSlider");
   const dots = document.querySelectorAll(".slider-dots .dot");
   const slides = slider.querySelectorAll(".slide");
-  const slideWidth = slides[0].offsetWidth;
+  const getSlideWidth = () => slides[0].offsetWidth;
+  const prevBtn = document.getElementById("sliderPrevBtn");
+  const nextBtn = document.getElementById("sliderNextBtn");
+
 
   let index = 1;
   let isTransitioning = false;
@@ -12,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     isTransitioning = true;
     index = i;
     slider.style.transition = "transform 0.5s ease";
-    slider.style.transform = `translateX(-${slideWidth * index}px)`;
+    slider.style.transform = `translateX(-${getSlideWidth() * index}px)`;
     updateDots();
   };
 
@@ -35,13 +38,26 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+
+
+   prevBtn.addEventListener("click", () => {
+	  if (isTransitioning) return;
+	  goToSlide(index - 1);
+	});
+
+	nextBtn.addEventListener("click", () => {
+	  if (isTransitioning) return;
+	  goToSlide(index + 1);
+	});
+
+
   // 自动轮播
   const startAutoSlide = () => {
     setInterval(() => {
       if (index >= slides.length - 1) {
         index = 1;
         slider.style.transition = "none";
-        slider.style.transform = `translateX(-${slideWidth * index}px)`;
+        slider.style.transform = `translateX(-${getSlideWidth() * index}px)`;
       }
       setTimeout(() => goToSlide(index + 1), 20);
     }, 2800); // 滚动节奏：每4秒滚动一次
@@ -52,11 +68,11 @@ document.addEventListener("DOMContentLoaded", () => {
     if (index >= slides.length - 1) {
       slider.style.transition = "none";
       index = 1;
-      slider.style.transform = `translateX(-${slideWidth * index}px)`;
+      slider.style.transform = `translateX(-${getSlideWidth() * index}px)`;
     } else if (index <= 0) {
       slider.style.transition = "none";
       index = slides.length - 2;
-      slider.style.transform = `translateX(-${slideWidth * index}px)`;
+      slider.style.transform = `translateX(-${getSlideWidth() * index}px)`;
     }
     isTransitioning = false;
     updateDots(); // 修复指示器在循环瞬移后未更新的问题
