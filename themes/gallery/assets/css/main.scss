@@ -18,12 +18,82 @@
 img.lazyload:not([src]) {
   visibility: hidden;
 }
-.signature-img {
-  width: 350px; // 你自己决定大小
+
+
+
+
+
+
+
+
+
+
+.subpage-signature-img {
+  width: 300px;
   height: auto;
-  margin-top:  0.9rem;
-  margin-bottom: 0rem;
+  margin-top: 0.9rem;
+  margin-bottom: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform 0.3s ease;
 }
+
+/* iPad 尺寸 */
+@media (max-width: 1024px) {
+  .subpage-signature-img {
+    transform: scale(0.9);
+    margin-top: 1.2rem;
+  }
+}
+
+/* 手机尺寸（更紧凑） */
+@media (max-width: 480px) {
+  .subpage-signature-img {
+    transform: scale(0.5);
+    margin-top: 1.5rem; /* 给按钮让空间 */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+.signature-img {
+  width: 350px;  /* 默认宽度 */
+  height: auto;
+  margin-top: 0.9rem;
+  margin-bottom: 0rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* iPad 及以下设备适配 */
+@media (max-width: 1024px) {
+  .signature-img {
+    width: 280px;
+    margin-top: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* 手机设备适配 */
+@media (max-width: 480px) {
+  .signature-img {
+    width: 170px;
+    margin-top: 2.5rem;
+    margin-bottom: 0rem;
+  }
+}
+
+
 nav.categories ul li:nth-child(n+15) {
   display: none;
 }
@@ -71,7 +141,7 @@ nav.categories ul li {
 .featured-title {
   font-size: 1.5rem;
   font-weight: bold;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .featured-slider-wrapper {
@@ -287,8 +357,50 @@ section.homepage-gallery {
   margin: 0 auto;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  margin-top: -1.5rem ;
+  margin-top: -1.5rem;
 }
+
+/* iPad 屏幕尺寸：每行2个格子 */
+@media (max-width: 1024px) {
+  section.homepage-gallery {
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    max-width: 860px;
+  }
+}
+
+/* 手机端样式优化 */
+@media (max-width: 480px) {
+  section.homepage-gallery {
+    margin-top: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);  /* ← 关键点：两列 */
+    gap: 0.75rem;
+    padding: 0 1rem; /* 左右内边距 */
+  }
+
+  section.homepage-gallery > * {
+    width: 100%;            /* 撑满 grid 单元格 */
+    max-width: none;        /* 清除限制 */
+    transform: none;        /* 不缩放，避免内容太小 */
+    padding-top: 0;         /* 移除多余 padding */
+  }
+
+  .homepage-gallery-item {
+    margin-bottom: 0;       /* 用 gap 控制间距 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .homepage-gallery-title {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    text-align: center;
+    grid-column: span 2;    /* 标题可以居中跨两列 */
+  }
+}
+
+
 
 
 hgroup {
@@ -313,12 +425,13 @@ hgroup {
 
 
 
-  @media (min-width: 640px) {
+  @media (max-width: 480px) {
     width: 83.3333%;
     margin-bottom: 0rem;
   }
 
-  @media (min-width: 768px) {
+  @media (max-width: 1024px) {
+  margin-bottom: 0rem;
     h1 {
       font-size: 2.25rem;
       line-height: 1.1111;
@@ -336,12 +449,7 @@ hgroup {
     }
   }
 }
-.subpage-signature-img {
-  width: 300px; // 你自己决定大小
-  height: auto;
-  margin-top:  0.9rem;
-  margin-bottom: 0rem;
-}
+
 
 
 section.gallery {
